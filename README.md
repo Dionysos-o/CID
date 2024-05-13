@@ -9,7 +9,8 @@ different datasets, we show that CID can (1) identify biologically meaningful dr
 have not been captured by traditional associative-analysis based methods, and (2) accurately
 predict the change directions of target genes if a driver gene is knocked out
 insert figure here
-![img.png](img.png)
+![image](https://github.com/Dionysos-o/CID/assets/68541740/6d9ff1d6-e36d-45d0-8af4-c3a46338107d)
+
 # Install
 
 Please refer the following link: https://github.com/TencentAILabHealthcare/scBERT for the installation of scBERT and the pre-trained model checkpoint.
@@ -17,19 +18,24 @@ Please refer the following link: https://github.com/TencentAILabHealthcare/scBER
 The cuda version used in CID is 12.1 and the python version is 3.11.8.
 
 # Data
+Pancreas islet cells scRNA-seq data (Muraro dataset) was downloaded from Gene Expression
+Omnibus (GEO) GSE85241. Perturb-seq datasets (Dixit dataset) was downloadded from GEO
+GSE90063. Breast cancer data was downloaded from GEO GSE75688
 
 The data can be downloaded from these links. 
-- Pancreas islet data (Muraro et al., 2016): https://rdrr.io/github/LTLA/scRNAseq/man/MuraroPancreasData.html
-- Perturb-seq data(Dixit et al., 2016): https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE96769
+- Pancreas islet data (GSE85241): https://rdrr.io/github/LTLA/scRNAseq/man/MuraroPancreasData.html
+- Perturb-seq data(GSE90063): [https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE96769](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE90063)
 - Breast cancer data (GSE75688): https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE75688
 
 
-and use the preprocess file to preprocess the data.
+and use the preprocess file `preprocess.py` to preprocess the data.
 ```
 python preprocess.py --data_path "data_path" --output_path "output_path"
 ```
     
 # Experiments
+
+All scripts are under the `CID_Script` folder.
 
 The expected input data of CID is a pre-processed gene expression matrix with format h5ad, which should be normalized and log-transformed by the preprocess file.  
 
