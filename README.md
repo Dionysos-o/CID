@@ -1,6 +1,7 @@
 # CID--Driver gene detection via causal inference on single cell embeddings
 
-### CID a causal inference based on scBERT to identify driver genes from scRNA-seq data.
+### CID: a causal inference based on scBERT to identify driver genes from scRNA-seq data.
+
 CID is a causal inference-based approach designed to identify driver genes from single-cell RNA sequencing (scRNA-seq) data. It leverages advancements in large language models (LLMs) within the field of single-cell biology. CID not only identifies biologically meaningful driver genes that are overlooked by traditional associative-analysis methods but also accurately predicts the directional changes of target genes following the knockout of a driver gene.
 ![image](https://github.com/Dionysos-o/CID/assets/68541740/6d9ff1d6-e36d-45d0-8af4-c3a46338107d)
 
