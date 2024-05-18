@@ -59,5 +59,9 @@ srun --time=5:00:00 --mem=50G --gpus=v100:1 torchrun --standalone --nnodes=1 --n
 
 
 # Citation
+Chengbo Fu, Lu Cheng Driver gene detection via causal inference on single cell embeddings medRxiv 2024.05.16.24307521; doi: https://doi.org/10.1101/2024.05.16.24307521
+
 Yang, F., Wang, W., Wang, F. et al. scBERT as a large-scale pretrained deep language model for cell type annotation of single-cell RNA-seq data. Nat Mach Intell (2022). https://doi.org/10.1038/s42256-022-00534-z
+
+
 
